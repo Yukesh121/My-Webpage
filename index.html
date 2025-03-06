@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Sri's First Website</title>
+    <title>Welcome to Yukesh's First Website</title>
     <style>
         body {
             margin: 0;
@@ -31,14 +31,14 @@
         h1 {
             font-size: 3em;
             margin: 0;
-            animation: slideIn 1s ease forwards;
+            animation: slideIn 1s ease forwards, techyAnimation 1s ease forwards;
             opacity: 0;
         }
 
         p {
             font-size: 1.5em;
             margin-top: 10px;
-            animation: slideIn 1.5s ease forwards;
+            animation: slideIn 1.5s ease forwards, techyAnimation 1s ease forwards;
             opacity: 0;
         }
 
@@ -62,13 +62,24 @@
             }
         }
 
-        
+        @keyframes techyAnimation {
+            0% {
+                transform: scale(0.8);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
         @media (max-width: 600px) {
             h1 {
-                font-size: 2.5em; 
+                font-size: 3.5em;
             }
             p {
-                font-size: 1.2em;
+                font-size: 2em;
             }
             .container {
                 padding: 15px; 
@@ -77,10 +88,11 @@
 
         @media (max-width: 400px) {
             h1 {
-                font-size: 2em; 
+                font-size: 3em;
             }
             p {
-                font-size: 1em; 
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
